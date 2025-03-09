@@ -1,65 +1,102 @@
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 /* Particles.js Background */
 #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #121212; /* Dark background */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keeps it in the background */
+  background: #121212; /* Dark theme */
 }
 
-/* Container */
+/* Main Container */
 .container {
-    position: relative;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  position: relative;
+  max-width: 900px; /* Keeps it compact */
+  margin: 60px auto; /* Centers the content */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent for readability */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
 }
 
 /* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #555;
+header p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
 }
 
 /* Sections */
 section {
-    margin-bottom: 20px;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #222;
-    border-bottom: 2px solid #444;
-    padding-bottom: 5px;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+p,
+li {
+  font-size: 1rem;
+  color: #dddddd;
+  line-height: 1.6;
 }
 
 ul {
-    list-style: none;
-    padding: 10px;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    font-size: 1rem;
-    padding: 5px 0;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact p {
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
 }
