@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Fira Mono", monospace;
   font-weight: 300; /* Light weight for readability */
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -43,7 +43,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Space Mono", monospace;
+  font-family: "Fira Mono", monospace;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .tagline {
-  color: #a0a0a0;
+  color: #cdc5c5;
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 2rem;
@@ -119,7 +119,7 @@ h2 {
   font-size: 1.2rem;
 }
 .content-section p {
-  color: #444;
+  color: #8f8888;
   font-size: 1.1rem;
   max-width: 65ch;
   margin: 0 auto;
